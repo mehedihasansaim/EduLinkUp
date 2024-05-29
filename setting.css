@@ -1,0 +1,25 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: #e3f3fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 50rem;
+    background-color: #a1d9fc;
+    height: 100vh;
+    overflow: auto;
+}
+
+.profile-setting{
+    width: 40rem;
+    height: 3rem;
+    background-color: #e3f3fc;
+}

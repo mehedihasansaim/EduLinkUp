@@ -1,0 +1,420 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    margin: 0;
+    overflow: hidden;
+    background-color: #e3f3fc;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.main{
+    overflow: auto;
+    display: flex;
+}
+
+.nav-bar{
+    width: 20rem;
+    margin-right: 0.5rem;
+    position: sticky;
+}
+
+.main-content{
+    width: 45rem;
+    flex: 1;
+}
+
+.write-post input{
+ outline: none;
+ border: none;
+}
+
+.suggestion-footer{
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo{
+    display: flex;
+    height: 6rem;   
+}
+
+.logo-insert{
+    height: 5rem;
+    width: 12rem;
+    margin-left: 2rem;
+    padding-top: 1.5em;
+}
+
+.nav-options{
+    padding: 1.5rem;
+    height: 33rem;
+}
+
+.rights{
+    padding: 1.5rem;
+}
+.nav-option{
+    display: flex;
+    line-height: 2.25rem;
+    opacity: 0.7;
+    padding: 0.5rem 1rem;
+    margin: .10rem;
+}
+
+.nav-option:hover{
+    opacity: 1;
+    background-color: #a1d9fc;
+    cursor: pointer;
+    border-radius: .25rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-option p{
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-option a{
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    margin-top: .60rem;
+    margin-bottom: 0;
+}
+
+.write-post{
+    background-color: white;
+    height: 5rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 1rem;  
+}
+
+.write-here{
+    height: 3rem;
+    width: 28rem;
+    background-color: rgb(239, 238, 238);
+    border-radius: 5rem;
+}
+
+.write-here input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    background-color: rgb(239, 238, 238);
+}
+
+.post{
+    background-color: white;
+    height: 49rem;
+    width: 30rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    border-radius: 1rem;   
+}
+
+.post-header{
+    height: 4rem;
+    display: flex;
+}
+
+.post-profile{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+.post-profile:hover{
+    cursor: pointer;
+}
+
+.post-profile img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.post-author{
+    margin: 1rem 0 0 0;
+}
+
+.post-author h5{
+    margin: 0 0 0 .25rem;
+    font-size: 16px;
+}
+
+.post-author h5:hover{
+    text-decoration: underline;
+}
+
+.post-author p{
+    margin: 0 0 0 .25rem;
+    opacity: .7;
+    font-size: 13px;
+}
+
+.caption{
+    margin: 1rem;
+}
+
+.post-image{
+    height: 38.70rem;
+    width: 100%;
+    background-color: #98d3f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.post-image img{
+    width: 30rem;
+}
+
+.lcs{
+    display: flex;
+}
+
+.lcs button{
+    width: 9rem;
+    height: 2.5rem;
+    margin-top: .25rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+}
+
+.lcs button:hover{
+    cursor: pointer;
+    background-color: rgb(239, 238, 238);
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.like i{
+    margin: .5rem;
+    font-size: 18px;
+}
+
+.like p{
+    font-size: 14px;
+}
+
+.profile{
+    height: 10rem;
+    width: 25rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.profile:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 30px #a1d9fc;
+}
+
+.profile-image{
+    width: 32%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    width: 7rem;
+    background-color: #2eed84;
+    border-radius: 50%;
+
+}
+
+.user-image img{
+    height: 6rem;
+    width: 6rem;
+}
+
+.profile-details{
+    width: 68%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestions{
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+
+.s-head{
+    display: flex;
+    justify-content: space-between;
+    height: 2rem;
+    margin-bottom: .75rem;
+}
+
+.s-head p{
+    margin-top: .5rem;
+    margin-left: .5rem;
+}
+
+.s-head a{
+    margin-top: .5rem;
+    margin-right: 1rem;
+}
+
+.s-head a:hover{
+    text-decoration: underline;
+}
+
+.a-suggestion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestion{
+    height: 4.5rem;
+    width: 24rem;
+    background-color: #ffffff;
+    margin-bottom: .25rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.suggestion:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 30px #a1d9fc;
+}
+
+.s-p-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 1px solid rgb(132, 132, 132);
+    margin-left: .25rem;
+    background-color: #2eed84;
+}
+
+.s-p-image img{
+    height: 3rem;
+    width: 3rem;
+}
+
+.s-p-deatails{
+    width: 14rem;
+}
+
+.s-p-deatails h4{
+    margin: 0 0 0 .5rem;
+}
+
+
+.s-p-deatails p{
+    margin: 0 0 0 .5rem;
+}
+
+.follow button{
+    border: none;
+    border-radius: 3rem;
+    color: #f8f8f8;
+    background-color: #2eed84;
+    height: 2rem;
+    width: 5rem;
+}
+
+.follow button:hover{
+    box-shadow: 1px 1px 20px #98d3f7;
+    cursor: pointer;
+}
+
+.footer{
+    height: 8rem;
+    width: 22rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-options{
+    height: 3rem;
+}
+
+.footer a{
+    opacity: .8;
+    margin-left: .25rem;
+    margin-right: .25rem;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.copyright {
+    height: 2rem;
+    display: flex;
+
+}
+
+@media (max-width: 1200px) {
+    .suggestion-footer{
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .hide{
+        display: none;
+    }
+}
+
+

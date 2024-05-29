@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="icon" href="bulb-vector-PNG.png" />
+<title>EduLinkUp-Empowering Education through Collaboration</title>
+<link rel="stylesheet" href="write-post.css">
+</head>
+<body>
+
+<div class="post-container">
+    <div id="success-message">Post submitted successfully!</div>
+    <div class="post-header">
+        <div>
+            <img src="https://via.placeholder.com/40" alt="User Avatar">
+            <h3>User Name</h3>
+        </div>
+        <div>
+            <select id="visibility">
+                <option value="public">Public</option>
+                <option value="friends">Friends</option>
+                <option value="only-me">Only Me</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="post-content">
+        <textarea id="postContent" placeholder="What's on your mind?"></textarea>
+    </div>
+
+    <div class="post-catagory">
+        <select id="category">
+            <option value="research">Select Catagoroy</option>
+            <option value="research">Research Paper</option>
+            <option value="projects">Projects</option>
+            <option value="courses">Courses</option>
+            <option value="professors">Professors</option>
+        </select>
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <div class="post-options">
+        <h4>Add your post</h4>
+        <i class="fas fa-map-marker-alt fa-1x" id="locationIcon"></i>
+        <i class="fas fa-user-tag fa-1x" id="tagIcon"></i>
+    </div>
+
+    <div class="post-actions">
+       <a href="home.html"> <button id="postButton">Post</button></a>
+    </div>
+</div>
+
+<script>
+document.getElementById('postButton').addEventListener('click', function() {
+    const postContent = document.getElementById('postContent').value;
+    const visibility = document.getElementById('visibility').value;
+    const category = document.getElementById('category').value;
+    const fileInput = document.getElementById('fileInput').files[0];
+
+    // Mock function to simulate post submission
+    function submitPost(content, visibility, category, file) {
+        console.log('Post Content:', content);
+        console.log('Visibility:', visibility);
+        console.log('Category:', category);
+        console.log('File:', file);
+        alert('Post submitted successfully!');
+    }
+
+    // Validate input before submitting
+    if (postContent.trim() === '') {
+        alert('Please enter some content for your post.');
+        return;
+    }
+
+    submitPost(postContent, visibility, category, fileInput);
+
+    // Clear inputs after submission
+    document.getElementById('postContent').value = '';
+    document.getElementById('visibility').selectedIndex = 0;
+    document.getElementById('category').selectedIndex = 0;
+    document.getElementById('fileInput').value = '';
+
+    // Show success message
+    const successMessage = document.getElementById('success-message');
+    successMessage.style.display = 'block';
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+    }, 3000);
+});
+
+document.getElementById('locationIcon').addEventListener('click', function() {
+    alert('Location feature coming soon!');
+});
+
+document.getElementById('tagIcon').addEventListener('click', function() {
+    alert('Tag people feature coming soon!');
+});
+</script>
+
+</body>
+</html>
